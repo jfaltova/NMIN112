@@ -76,7 +76,7 @@ def quick_sort_iter(seznam):
 
 
 def partition(s, low, high):
-    pivot = s[high//2]
+    pivot = s[high]
     i = low
 
     for j in range(low, high):

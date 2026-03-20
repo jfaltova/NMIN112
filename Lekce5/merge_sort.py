@@ -62,6 +62,8 @@ def merge_sort(seznam):
     left = merge_sort(seznam[:mid])
     right = merge_sort(seznam[mid:])
 
+    return merge(left, right)
+
 def cas(sort_func, data):
     """Měří čas potřebný k seřazení dat pomocí zadané řadící funkce."""
     start = time.perf_counter()
